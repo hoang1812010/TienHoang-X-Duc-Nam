@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Clip Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Phần hiển thị hình ảnh/video chính -->
+        <div class="video-preview">
+            <img src="background.jpg" alt="Background Image" id="preview-image">
+        </div>
+
+        <!-- Thanh điều chỉnh -->
+        <div class="controls">
+            <div class="control-header">
+                <span>BẬT CHỨC NĂNG MÀN HÌNH</span>
+            </div>
+            <div class="control-buttons">
+                <button class="toggle-btn">LINE</button>
+                <button class="toggle-btn">ZOOM</button>
+                <button class="toggle-btn">TRANS</button>
+                <button class="toggle-btn">HYPER SPEED ITEMS DRAG</button>
+            </div>
+            <div class="control-sliders">
+                <div class="control-item">
+                    <label for="speed">TỐC ĐỘ</label>
+                    <input type="range" id="speed" min="0.1" max="2" step="0.1" value="1">
+                    <span id="speed-value">1.0x</span>
+                </div>
+                <div class="control-item">
+                    <label for="brightness">ĐỘ SÁNG</label>
+                    <input type="range" id="brightness" min="0" max="200" value="100">
+                    <span id="brightness-value">100%</span>
+                </div>
+                <div class="control-item">
+                    <label for="contrast">ĐỘ TƯƠNG PHẢN</label>
+                    <input type="range" id="contrast" min="0" max="200" value="100">
+                    <span id="contrast-value">100%</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
